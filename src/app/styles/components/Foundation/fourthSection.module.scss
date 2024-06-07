@@ -1,0 +1,199 @@
+.section {
+  max-height: 100%;
+  background-color: #000;
+  padding-top: 118px;
+
+  .content {
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 52px;
+    justify-content: space-between;
+
+    .right {
+      width: 868px;
+      height: 898px;
+      overflow: hidden;
+      border-radius: 16px;
+      img {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+    .left {
+      width: 491px;
+      .heading {
+        color: #cbbd70;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+      }
+      .sub_heading {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        margin-top: 17px;
+      }
+      .dec {
+        color: #878787;
+        font-family: var(--GgRg);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 17px;
+      }
+      .donate {
+        border-radius: 9px;
+        background: #cbbd70;
+        border: none;
+        outline: none;
+        width: 153px;
+        height: 51px;
+        text-align: center;
+        font-family: var(--Gg-Md);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 45px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+    padding-top: 68px;
+
+    .content {
+      padding: 42px;
+
+      .right {
+        width: 50%;
+        height: 698px;
+      }
+      .left {
+        width: 45%;
+        .heading {
+          font-size: 37px;
+          line-height: 50px;
+        }
+        .sub_heading {
+          font-size: 21px;
+          line-height: 32px;
+          margin-top: 17px;
+        }
+        .dec {
+          font-size: 17px;
+          line-height: 25px;
+          margin-top: 17px;
+        }
+        .donate {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    padding-top: 3.94rem;
+
+    .content {
+      flex-direction: column;
+      padding: 0;
+      width: 95%;
+      margin: auto;
+
+      .right {
+        width: 100%;
+        height: 40.5rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+
+        img {
+          position: relative !important;
+          width: 100% !important;
+          height: auto !important;
+          top: -100px !important;
+        }
+      }
+      .left {
+        width: 100%;
+
+        .heading {
+          font-size: 2rem;
+          line-height: 2.5rem;
+
+        }
+        .sub_heading {
+          font-size: 1.3rem;
+          line-height: 1.5rem;
+          margin-top: 0.63rem;
+        }
+        .dec {
+          font-size: 1rem;
+          margin-top: 0.62rem;
+          line-height: 1.25rem;
+        }
+        .donate {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    padding-top: 3.94rem;
+
+    .content {
+      flex-direction: column;
+      padding: 0;
+      width: 95%;
+      margin: auto;
+
+      .right {
+        width: 100%;
+        height: 25.5rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+
+        img {
+          position: relative !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+      .left {
+        width: 100%;
+        .heading {
+          font-size: 1.875rem;
+          line-height: 2.5rem;
+        }
+        .sub_heading {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          margin-top: 0.63rem;
+        }
+        .dec {
+          font-size: 0.875rem;
+          margin-top: 0.62rem;
+          line-height: 1.25rem;
+        }
+        .donate {
+          display: none;
+        }
+      }
+    }
+  }
+}

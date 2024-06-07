@@ -1,0 +1,302 @@
+.section {
+  max-height: 100%;
+  background-color: #000;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  .fifthSection {
+    width: 98%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+    margin: auto;
+    .content {
+      .head {
+        color: #cbbd70;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 62px;
+        text-transform: uppercase;
+      }
+      .dec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        .text {
+          color: #fff;
+          font-family: var(--Gg-Rg);
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px;
+          width: 900px;
+        }
+        .hire {
+          border-radius: 9px;
+          background: #cbbd70;
+          border: none;
+          outline: none;
+          width: 153px;
+          height: 51px;
+          text-align: center;
+          font-family: var(--Gg-Md);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-top: 45px;
+          cursor: pointer;
+        }
+      }
+      .cards {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin-top: 69px;
+        margin-bottom: 69px;
+        flex-wrap: wrap;
+        grid-gap: 45px;
+
+        .singleItem {
+          width: auto;
+          height: auto;
+
+
+          .image {
+            position: relative;
+            overflow: hidden;
+            height: 32rem;
+            border-radius: 17px;
+            img {
+              position: relative !important;
+              width: 100% !important;
+              height: 100% !important;
+              object-fit: cover;
+
+            }
+          }
+          
+          .heading {
+            color: #cbbd70;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-top: 54px;
+          }
+          .dec {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        .border:nth-of-type(1) {
+          border-right: 1.5px solid #ffffff20;
+        }
+
+        .border:nth-of-type(2) {
+          border-right: 1.5px solid #ffffff20;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+  
+    .fifthSection {
+      .content {
+        .head {
+          font-size: 57px;
+          line-height: 58px;
+        }
+        .dec {
+          margin-top:15px;
+          .text {
+            font-size: 22px;
+            line-height: 29px;
+            width: 800px;
+          }
+          .hire {
+      scale: .9;
+          }
+        }
+        .cards {
+          margin-bottom: 49px;
+          grid-gap: 23px;
+  
+          .singleItem {
+  
+            .image {
+              height: 26rem;
+            }
+            
+            .heading {
+              font-size: 21px;
+              margin-top: 34px;
+            }
+            .dec {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    padding-top:2.38rem;
+    padding-bottom: 0;
+
+    .fifthSection {
+      width: 95%;
+      .content {
+        .head {
+          font-size: 2.875rem;
+          line-height: 2rem;
+          padding-top:20px;
+
+        }
+        .dec {
+          flex-direction: column;
+          margin-top: 1rem;
+          align-items: flex-start;
+
+          .text {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            width: 100%;
+          }
+          .hire {
+            margin-left: -.5rem;
+          }
+        }
+        .cards {
+          margin-top: 2rem;
+          margin-bottom: 3.1rem;
+          flex-direction: column;
+          display: flex;
+
+          .singleItem {
+            width: auto;
+            margin-bottom: 45px;
+
+            .image {
+              border-radius: 17px;
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height:610px;
+              img {
+                scale: 1.1;
+                height: auto !important;
+
+              }
+            }
+            .heading {
+              font-size: 1.6rem;
+              margin-top: 1.62rem;
+              line-height: 1.5rem;
+            }
+            .dec {
+              font-size:1.1rem;
+              margin-top: 0.76rem;
+              line-height: 1.55rem;
+            }
+          }
+
+          .border:nth-of-type(1) {
+            border-right: 1.5px solid #ffffff20;
+          }
+
+          .border:nth-of-type(2) {
+            border-right: 1.5px solid #ffffff20;
+          }
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    padding-top: 2.38rem;
+    padding-bottom: 0;
+
+    .fifthSection {
+      width: 95%;
+      .content {
+        .head {
+          font-size: 1.875rem;
+          line-height: 1.87rem;
+        }
+        .dec {
+          flex-direction: column;
+          margin-top: 0.75rem;
+          align-items: flex-start;
+
+          .text {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            width: 100%;
+          }
+          .hire {
+            width: 8.6875rem;
+            height: 2.8125rem;
+            font-size: 0.9375rem;
+            margin-top: 2.12rem;
+            margin-left: -.4rem;
+          }
+        }
+        .cards {
+          margin-top: 2rem;
+          margin-bottom: 3.1rem;
+          flex-direction: column;
+          display: flex;
+
+
+          .singleItem {
+            width: auto;
+            margin-bottom: 45px;
+
+            .image {
+              border-radius: 17px;
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height: 22.9375rem;
+            }
+            .heading {
+              font-size: 1.125rem;
+              margin-top: 1.62rem;
+              line-height: 1.5rem;
+            }
+            .dec {
+              font-size: 0.875rem;
+              margin-top: 0.44rem;
+              line-height: 1.25rem;
+            }
+          }
+
+          .border:nth-of-type(1) {
+            border-right: 1.5px solid #ffffff20;
+          }
+
+          .border:nth-of-type(2) {
+            border-right: 1.5px solid #ffffff20;
+          }
+        }
+      }
+    }
+  }
+}

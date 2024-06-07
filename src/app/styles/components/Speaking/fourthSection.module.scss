@@ -1,0 +1,349 @@
+.section {
+  max-height: 100%;
+  min-height: 100vh;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  border: 1px solid #474747;
+  background: #554a35;
+  .top {
+    text-align: center;
+    margin-bottom: 100px;
+    .heading {
+      color: #cbbd70;
+      text-align: center;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60px;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-bottom: 50px;
+
+    .card {
+      border-radius: 30px;
+      background: #1e1e1e;
+      overflow: hidden;
+      width: 100%;
+      max-width: 420px;
+      height: 432px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .lastCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .cardButton {
+          border-radius: 9px;
+          background: #cbbd70;
+          border: none;
+          cursor: pointer;
+          width: 163px;
+          height: 51px;
+        }
+      }
+
+      .image {
+        width: fit-content !important;
+        height: inherit !important;
+      }
+      .image-1 {
+        scale: 1.5;
+      }
+      .image-11 {
+        scale: 1.7;
+        top: 90px !important;
+        left: 20px !important;
+        position: relative !important;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        .heading {
+          color: #CBBD70;
+          font-family: var(--Gg-Rg);
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; 
+          width: 70%;
+        }
+        .dec {
+          color: #878787;
+          font-family: var(--Gg-Rg);
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .iPad_content {
+    display: none;
+  }
+  .mob_content {
+    display: none;
+  }
+  .mob_lastCard {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .top {
+      margin-bottom: 50px;
+      .heading {
+        font-size: 50px;
+      }
+    }
+    .content {
+      gap: 15px;
+      margin-bottom: 40px;
+  
+      .card {
+        border-radius: 25px;
+        height: 352px;
+        .content {
+          padding: 25px;
+          .heading {
+            font-size: 28px;
+            line-height: 29px; 
+          }
+          .dec {
+            font-size: 13.5px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .top {
+      margin-bottom: 50px;
+      .heading {
+        font-size: 50px;
+      }
+    }
+    .content {
+      display: none;
+    }
+    .iPad_content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .card {
+        border-radius: 21px;
+        // min-width: 320px;
+        // max-width: 340px;
+        border-radius: 21px;
+        background: #1e1e1e;
+        overflow: hidden;
+        // width: 340px;
+        max-height: 375px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+  
+        .lastCard {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          .cardButton {
+            border-radius: 9px;
+            background: #cbbd70;
+            border: none;
+            cursor: pointer;
+            width: 163px;
+            height: 51px;
+          }
+        }
+  
+        .image {
+          width: fit-content !important;
+          height: inherit !important;
+        }
+        .image-1 {
+          scale: 1.5;
+        }
+        .image-11 {
+          scale: 1.7;
+          top: 90px !important;
+          left: 20px !important;
+          position: relative !important;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 18px;
+          .heading {
+            color: #CBBD70;
+            font-family: var(--Gg-Rg);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+            width: 100%;
+          }
+          .dec {
+            color: #878787;
+            font-family: var(--Gg-Rg);
+            font-size: 12.5px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    padding-top: 3.87rem;
+    padding-bottom: 3.25rem;
+    min-height: auto;
+
+    .top {
+      margin-bottom: 3.19rem;
+      .heading {
+        font-size: 1.875rem;
+        line-height: 2.125rem;
+      }
+    }
+    .content {
+      display: none;
+    }
+    .mob_content {
+      gap: 15px;
+      margin-bottom: 40px;
+      display: inline;
+  
+
+      .card {
+        border-radius: 0.9375rem;
+        background: #1e1e1e;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100% !important;
+        height: 21.4375rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+  
+        .lastCard {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          .cardButton {
+            border-radius: 9px;
+            background: #cbbd70;
+            border: none;
+            cursor: pointer;
+            width: 163px;
+            height: 51px;
+          }
+        }
+  
+        .image {
+          width: fit-content !important;
+          height: inherit !important;
+          
+        }
+        .image-1 {
+          scale: 1.5;
+          left: 50px !important;
+          position: relative;
+        }
+        .image-3 {
+          scale: 1;
+          right: 80px !important;
+          position: relative;
+        }
+        .image-5 {
+          scale: 1;
+          right: 100px !important;
+          position: relative;
+        }
+        .image-7 {
+          scale: 1;
+          right: 100px !important;
+          position: relative;
+        }
+        .image-9 {
+          scale: 1;
+          right: 60px !important;
+          position: relative;
+        }
+        .image-11 {
+          scale: 1.7;
+          top: 60px !important;
+          left: 60px !important;
+          position: relative !important;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          .heading {
+            color: #CBBD70;
+            font-family: var(--Gg-Rg);
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.875rem;
+            width: 70%;
+          }
+          .dec {
+            color: #878787;
+            font-family: var(--Gg-Rg);
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.0625rem;       
+            }
+        }
+      }
+    }
+    .iPad_content {
+      display: none;
+    }
+    .mob_lastCard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 4.12rem;
+      .cardButton {
+        border-radius: 9px;
+        background: #cbbd70;
+        border: none;
+        cursor: pointer;
+        width: 8.6875rem;
+        height: 2.8125rem;
+        font-size: 0.9375rem;
+      }
+    }
+  }
+}

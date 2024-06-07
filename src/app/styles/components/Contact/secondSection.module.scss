@@ -1,0 +1,323 @@
+.section {
+  background-color: #000;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  height: 100%;
+  .right {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    border-radius: 16px;
+
+    img {
+      height: inherit !important;
+      width: 100% !important;
+      top: -90px !important;
+    }
+  }
+  .left {
+    flex: 0.89;
+    margin-right: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .content {
+      border-radius: 16px;
+      background: #141414;
+      padding: 44px 55px;
+
+      .heading {
+        color: #fff;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 70px;
+        text-transform: uppercase;
+      }
+      .sub_heading {
+        overflow: hidden;
+        color: #fff;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 36px;
+        margin-top: 16px;
+
+        .highlight {
+          color: #cbbd70;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px;
+        }
+      }
+      .info {
+        overflow: hidden;
+        color: #cbbd70;
+        text-overflow: ellipsis;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .iconImg {
+          margin-right: 10px;
+        }
+      }
+    }
+    .contentTwo {
+      margin-top: 14px;
+    }
+
+    .form {
+      margin-top: 78px;
+      .column {
+        display: flex;
+        gap: 33px;
+        margin-bottom: 30px;
+        input {
+          width: 100%;
+          height: 62px;
+          border-radius: 52px;
+          border: 1.5px solid #ffffff2a;
+          color: #fff;
+          outline: none;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          background-color: transparent;
+          padding: 26px;
+        }
+      }
+      .textArea {
+        textarea {
+          height: 144px;
+          border: 1.5px solid #ffffff2a;
+          width: 100%;
+          border-radius: 25px;
+          background: #141414;
+          padding: 19px;
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          resize: none;
+        }
+      }
+      .submit {
+        width: 163px;
+        height: 51px;
+        border-radius: 9px;
+        background: #cbbd70;
+        color: #000;
+        text-align: center;
+        font-family: var(--Gg-Md);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        outline: none;
+        margin-top: 55px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+    background-color: #000;
+    padding-bottom: 50px;
+    .right {
+      img {
+        height: inherit !important;
+        width: 100% !important;
+        top: -90px !important;
+      }
+    }
+    .left {
+      flex: 1;
+      .content {
+        padding: 28px 40px;
+  
+        .heading {
+          font-size: 34px;
+          line-height: 60px;
+        }
+        .sub_heading {
+          font-size: 24px;
+          line-height: 32px;
+          margin-top: 12px;
+  
+          .highlight {
+            font-size: 24px;
+          line-height: 32px;
+          }
+        }
+        .info {
+          font-size: 18px;
+          line-height: 20px;
+          margin-top: 17px;
+          .iconImg {
+            margin-right: 8px;
+            scale: .8;
+            margin-top: 4px;
+          }
+        }
+      }
+      .contentTwo {
+        margin-top: 14px;
+      }
+  
+      .form {
+        margin-top: 78px;
+        .column {
+          display: flex;
+          gap: 33px;
+          margin-bottom: 30px;
+          input {
+            width: 100%;
+            height: 62px;
+            border-radius: 52px;
+            border: 1.5px solid #ffffff2a;
+            color: #fff;
+            outline: none;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: transparent;
+            padding: 26px;
+          }
+        }
+        .textArea {
+          textarea {
+            height: 144px;
+            border: 1.5px solid #ffffff2a;
+            width: 100%;
+            border-radius: 25px;
+            background: #141414;
+            padding: 19px;
+            color: #fff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            resize: none;
+          }
+        }
+        .submit {
+          width: 163px;
+          height: 51px;
+          border-radius: 9px;
+          background: #cbbd70;
+          color: #000;
+          text-align: center;
+          font-family: var(--Gg-Md);
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: none;
+          outline: none;
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    padding-bottom: 3.62rem;
+    flex-direction: column-reverse;
+
+    .right {
+      flex: none;
+      height: 29.6875rem;
+      width: 100%;
+      border-radius: 16px;
+
+      img {
+        width: inherit !important;
+        height: 120% !important;
+        top: 0px !important;
+        scale: 1;
+        object-fit: cover;
+
+      }
+    }
+    .left {
+      flex: none;
+      margin-right: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    padding-bottom: 3.62rem;
+    flex-direction: column-reverse;
+
+    .right {
+      flex: none;
+      height: 21.6875rem;
+      width: 100%;
+      border-radius: 16px;
+
+      img {
+        width: inherit !important;
+        height: 100% !important;
+        top: 0px !important;
+        scale: 1.1;
+      }
+    }
+    .left {
+      flex: none;
+      margin-right: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 1rem;
+
+      .content {
+        padding: 1.81rem 1.56rem;
+
+        .heading {
+          font-size: 1.875rem;
+        }
+        .sub_heading {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          margin-top: 2.06rem;
+
+          .highlight {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+          }
+        }
+        .info {
+          font-size: 1.125rem;
+          margin-top: 1rem;
+          .iconImg {
+            margin-right: 5px;
+            scale: .8;
+          }
+        }
+      }
+
+
+
+    }
+  }
+}

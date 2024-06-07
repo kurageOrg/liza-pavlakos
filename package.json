@@ -1,0 +1,39 @@
+{
+  "name": "liza",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.1",
+    "date-fns": "^3.6.0",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "gsap": "^3.12.5",
+    "next": "14.2.1",
+    "react": "^18",
+    "react-countup": "^6.5.3",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18",
+    "react-fast-marquee": "^1.6.4",
+    "react-slick": "^0.30.2",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.75.0",
+    "scss": "^0.2.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-datepicker": "^6.2.0",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
+    "@types/react-text-marquee": "^1.0.5",
+    "typescript": "^5"
+  }
+}

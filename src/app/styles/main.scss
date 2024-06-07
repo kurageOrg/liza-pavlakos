@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--He-Rg);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #cbbd7000 #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+  html {
+    -webkit-text-size-adjust: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 500px #141414 inset !important;
+    -webkit-text-fill-color: #fff;
+    border: 1.5px solid #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+  
+  
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #141414;
+    border: 1.5px solid #ffffff2a !important;
+  }
+}
+button {
+  outline: none !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1794px;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.headerWrapper {
+  padding-top: 99px;
+}
+
+.main-container {
+  visibility: hidden;
+}
+
+.content {
+  width: auto;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+}
+.react-datepicker__month-container {
+  position: absolute;
+    top: -5px;
+    left: -122px;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--Gg-Md) !important;
+
+}
+.react-datepicker__navigation--previous {
+  left: -88px !important;
+  top: -1px !important;
+}
+.react-datepicker__navigation--next {
+  right: -88px !important;
+  top: -1px !important;
+
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: #cbbd70 !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #cbbd70 !important;
+}
+.react-datepicker__day {
+  color: #000 !important;
+
+}
+.react-datepicker__day:hover {
+  background-color: #cbbd70 !important;
+  color: #000 !important;
+}
+.react-datepicker__day {
+  color: #ffffffc0 !important;
+}
+.react-datepicker__header {
+  background-color: #cbbd70 !important;
+
+}
+.react-datepicker__navigation-icon::before {
+  border-color: #000 !important;
+  border-width: 1.5px 1.5px 0 0 !important;
+}
+.react-datepicker__triangle {
+  display: none !important;
+}
+@media only screen and (max-width: 1600px) {
+  .headerWrapper {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    visibility: visible;
+  }
+.react-datepicker-wrapper {
+  width: 100%;
+}
+  .content {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin: 0;
+  }
+  body {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+    &::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .main-container {
+    visibility: visible;
+  }
+  .react-datepicker-wrapper {
+    width: 100% !important;
+  }
+
+  .slick-slide {
+    transition: all 0.3s ease-in-out;
+    padding: 0 10px; /* Add horizontal padding to create space between items */
+    box-sizing: border-box;
+    display: flex; /* Ensure the slide content is in a row */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-list {
+    margin: 0 -10px; /* Adjust negative margin to maintain full width of the slider */
+  }
+  body {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+    &::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+    }
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin: 0;
+  }
+}

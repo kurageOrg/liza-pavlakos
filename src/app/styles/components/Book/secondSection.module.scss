@@ -1,0 +1,138 @@
+.section {
+  background-color: #000;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  .heading {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .sub_heading {
+    color: #cbbd70;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    width: 752px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .content {
+    margin-top: 45px;
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 40px;
+      width: 652px;
+      margin: auto;
+      opacity: 0.8;
+      margin-bottom: 50px;
+    }
+  }
+  .download {
+    width: 219px;
+    height: 51px;
+    background-color: #cbbd70;
+    outline: none;
+    border: none;
+    border-radius: 9px;
+    color: #000;
+    text-align: center;
+    font-family: var(--Gg-Md);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    .heading {
+      font-size: 50px;
+    }
+    .sub_heading {
+      font-size: 30px;
+      line-height: 40px;
+      width: 852px;
+      margin-top: 30px;
+    }
+    .content {
+      margin-top: 35px;
+      p {
+        font-size: 21px;
+        line-height: 35px;
+        width: 752px;
+        margin-bottom: 40px;
+      }
+    }
+    .download {
+scale: .9;
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    padding-top: 5.19rem;
+    padding-bottom: 0;
+
+
+    .sub_heading {
+      margin-top: 1.32rem;
+      width: 95%;
+    }
+    .content {
+      margin-top: 45px;
+      p {
+        width: 95%;
+        margin-bottom: 2.81rem;
+      }
+    }
+
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    padding-top: 5.19rem;
+    padding-bottom: 0;
+
+    .heading {
+      font-size: 1.875rem;
+    }
+    .sub_heading {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin-top: 1.32rem;
+      width: 95%;
+    }
+    .content {
+      margin-top: 45px;
+      p {
+        font-size: 0.875rem;
+
+        width: 95%;
+        line-height: 1.25rem;
+        margin-bottom: 2.81rem;
+      }
+    }
+    .download {
+      scale: 0.8;
+    }
+  }
+}

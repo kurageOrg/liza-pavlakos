@@ -1,0 +1,292 @@
+.section {
+  background-color: #000;
+  margin-top: 0px;
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    .heading {
+      color: #cbbd70;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  .videoSection {
+    height: 900px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid #cbbd70;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+    .transparentLayer {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    video {
+      height: 100%;
+      width: 100%;
+      scale: 1.3;
+    }
+    .playbtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      z-index: -1;
+      outline: none;
+      border: none;
+      background-color: transparent;
+    }
+    .mute {
+      position: absolute;
+      top: 95%;
+      left: 96.5%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      z-index: -1;
+    }
+
+    &:hover {
+      .playbtn {
+        z-index: 9;
+      }
+      .mute {
+        z-index: 9;
+      }
+      .transparentLayer {
+        z-index: 8;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding-bottom: 85px;
+    flex-direction: column;
+    border-bottom: 1px solid #cbbd70;
+
+    .heading {
+      color: #f4f2ee;
+      font-family: var(--GgRg);
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 18px;
+    }
+    .dec {
+      overflow: hidden;
+      color: #a1a1a1;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21.5px;
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    video {
+      height: revert;
+      width: 100%;
+      scale: 0.95;
+    }
+
+    .backdrop {
+      z-index: 99999999999;
+      position: absolute;
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+    margin-top: 0px;
+    .top {
+      margin-top: 50px;
+      padding-bottom: 20px;
+      .heading {
+        font-size: 34px;
+      }
+    }
+    .videoSection {
+      margin-top: 10px;
+      border-radius: 18px;
+      border: 1.5px solid #cbbd70;
+      height: 600px;
+      .playbtn {
+        svg {
+          scale: 0.85;
+        }
+      }
+      .mute {
+        svg {
+          scale: 0.8;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 25px;
+      padding-bottom: 60px;
+
+      .heading {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      .dec {
+        font-size: 15px;
+      }
+    }
+
+    .modal {
+      video {
+        scale: 0.9;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    margin-top: 0.95rem;
+    .top {
+      margin-top: 0;
+      padding-bottom: 1.25rem;
+      .heading {
+        margin-top: 0.95rem;
+        font-size: 2rem;
+      }
+    }
+    .videoSection {
+      height: 24rem;
+      margin-top: 0;
+      border-radius: 1rem;
+
+      video {
+        scale: 1.5;
+      }
+      .playbtn {
+        svg {
+          scale: 0.5;
+        }
+      }
+      .mute {
+        top: 90%;
+        left: 95%;
+        svg {
+          scale: 0.5;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 1.5rem;
+      padding-bottom: 1.75rem;
+
+      .heading {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .dec {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+    .modal {
+      .modalContent {
+        iframe {
+          width: 100% !important;
+          height: 100% !important;
+          scale: 1;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    margin-top: 0rem;
+    .top {
+      margin-top: 0rem;
+      padding-bottom: 1.25rem;
+      .heading {
+        margin-top: 1.95rem;
+        font-size: 1.875rem;
+      }
+    }
+    .videoSection {
+      height: 16rem;
+      margin-top: 0;
+      border-radius: 1rem;
+
+      video {
+        scale: 1.7;
+      }
+      .playbtn {
+        svg {
+          scale: 0.5;
+        }
+      }
+      .mute {
+        top: 90%;
+        left: 95%;
+        svg {
+          scale: 0.5;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 1.5rem;
+      padding-bottom: 1.75rem;
+
+      .heading {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .dec {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+    }
+    .modal {
+      .modalContent {
+        iframe {
+          width: 100% !important;
+          height: 100% !important;
+          scale: 1;
+        }
+      }
+    }
+  }
+}

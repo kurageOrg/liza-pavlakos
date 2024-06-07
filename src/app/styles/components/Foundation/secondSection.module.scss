@@ -1,0 +1,271 @@
+.section {
+  max-height: 100%;
+  background-color: #000;
+
+  .content {
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .head {
+      color: #fff;
+      text-align: center;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .text {
+      color: #cbbd70;
+      text-align: center;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+    .cards {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 69px;
+      margin-bottom: 69px;
+    
+      .singleItem {
+        width: 100%;
+        max-width: 524px; // Added max-width to prevent too wide elements on large screens
+        margin-bottom: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        .image {
+          border-radius: 17px;
+          position: relative;
+          overflow: hidden;
+          width: 100%; // Allow image to be responsive
+          height: 30vw; // Set height to be responsive (adjust as needed)
+          max-height: 485px; // Add a max-height to prevent excessive size
+          opacity: 0.8;
+    
+          img {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important; // Ensure the image fills the container
+            object-fit: cover; // Maintain aspect ratio and cover the container
+          }
+        }
+    
+        .heading {
+          color: #cbbd70;
+          text-align: center;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px;
+          margin-top: 52px;
+        }
+    
+        .dec {
+          color: #878787;
+          margin-top: 24px !important;
+          text-align: center;
+          font-family: var(--Gg-Rg);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+    
+      .border:nth-of-type(1) {
+        border-right: 1.5px solid #ffffff20;
+      }
+    
+      .border:nth-of-type(2) {
+        border-right: 1.5px solid #ffffff20;
+      }
+
+    
+
+    }
+    
+    
+    .donate {
+      border-radius: 9px;
+      background: #cbbd70;
+      border: none;
+      outline: none;
+      width: 153px;
+      height: 51px;
+      text-align: center;
+      font-family: var(--Gg-Md);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-top: 45px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section {
+  
+    .content {
+
+      .head {
+        font-size: 50px;
+      }
+  
+      .text {
+        font-size: 30px;
+      }
+      .cards {
+        flex-wrap: nowrap;
+        margin-top: 69px;
+        margin-bottom: 69px;
+      
+        .singleItem {
+          width: 100%;
+          margin-bottom: 25px;
+          margin-left: 20px;
+          margin-right: 20px;
+      
+          .image {
+            width: 100%; // Allow image to be responsive
+            height: 26vw; // Set height to be responsive (adjust as needed)
+            max-height: 385px; // Add a max-height to prevent excessive size
+          }
+      
+          .heading {
+            font-size: 23px;
+            margin-top: 42px;
+          }
+      
+          .dec {
+            margin-top: 14px !important;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            width:90%;
+          }
+        }  
+  
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    margin-top: 3.69rem;
+    .content {
+      .head {
+        font-size: 2.3rem;
+      }
+
+      .text {
+        font-size: 1.6rem;
+        margin-top: 0.4rem;
+      }
+
+      .cards {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        align-items: center;
+        .singleItem {
+          margin-bottom: 3.94rem;
+          width: 100%;
+
+          .image {
+            height: auto;
+            width: revert-layer;
+          }
+          .heading {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5rem;
+            margin-top: 1.06rem;
+          }
+          .dec {
+            margin-top: 0.38rem !important;
+            font-size:1.2rem;
+            line-height: 1.25rem;
+            width: 95%;
+          }
+        }
+
+
+      }
+      .donate {
+        width: 8.6875rem;
+        height: 2.8125rem;
+        font-size: 0.9375rem;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .section {
+    margin-top: 3.69rem;
+    .content {
+      .head {
+        font-size: 1.5rem;
+      }
+
+      .text {
+        font-size: 1.125rem;
+        margin-top: 0.25rem;
+      }
+
+      .cards {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        align-items: center;
+        .singleItem {
+          margin-bottom: 3.94rem;
+          width: 100%;
+
+          .image {
+            height: auto;
+            width: revert-layer;
+          }
+          .heading {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 2.5rem;
+            margin-top: 1.06rem;
+          }
+          .dec {
+            margin-top: 0.38rem !important;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            width: 100%;
+          }
+        }
+
+
+      }
+      .donate {
+        width: 8.6875rem;
+        height: 2.8125rem;
+        font-size: 0.9375rem;
+        margin-top: 15px;
+      }
+    }
+  }
+}
