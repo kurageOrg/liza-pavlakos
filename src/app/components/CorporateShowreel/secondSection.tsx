@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import classes from "@/app/styles/components/CorporateShowreel/secondSection.module.scss";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
@@ -24,6 +24,15 @@ const Modal = ({ isOpen, onClose, videoLink }: { isOpen: boolean; onClose: () =>
       </div>
     </div>
   );
+};
+
+const extractVideoId = (videoLink: string): string | null => {
+  const match = videoLink.match(/(?:youtube\.com\/embed\/|youtu\.be\/)([^?]+)/);
+  return match ? match[1] : null;
+};
+
+const getThumbnailUrl = (videoId: string): string => {
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 };
 
 const SecondSection: React.FC = () => {
@@ -55,7 +64,7 @@ const SecondSection: React.FC = () => {
       heading: "A Winning Mindset - LIZA PAVLAKOS- Corporate Showreel",
       description:
         "Explore the world of motivation and empowerment with Liza Pavlakos, a highly sought-after and accomplished speaker, founder of Mind Hub Directory, and author of the compelling novel Conviction. Recognized with Toastmasters' Golden Gavel Award, Liza is ranked among the Top 10 Female Speakers in the World by Real Leaders. Her impactful work includes being the 8th globally ranked speaker in Suicide Prevention...",
-        videoLink: "",
+        videoLink: "https://www.youtube.com/embed/C_1ylQH43MM?si=cs0zKetkoCSJ7otd",
         
       },
     {
@@ -97,7 +106,7 @@ const SecondSection: React.FC = () => {
       heading: "THRIVE IN THE FACE OF ADVSERITY | Liza Pavlakos Motivation",
       description:
         "THRIVE IN THE FACE OF ADVSERITY | Liza Pavlakos Motivation|||Life in the modern world can be stressful, confusing and challenging even when things are going well, but what happens when forces beyond your control intervene and take you on a dark journey with no escape?...",
-        videoLink: "",
+        videoLink: "https://www.youtube.com/embed/DGY3z-Rk20Q?si=9X78POMglVSeVGK0",
     },
     {
       id: 9,
@@ -174,7 +183,13 @@ const SecondSection: React.FC = () => {
       "Explore the world of motivation and empowerment with Liza Pavlakos, Founder of Mind Hub Directory—a mental health directory that strives to make a positive impact. Liza is a highly sought-after and accomplished speaker, as well as the author of the compelling novel Conviction. Recognized with Toastmasters' Golden Gavel Award, she is ranked among the Top 10 Female Speakers in the World by Real Lead...",
       videoLink: "https://www.youtube.com/embed/5jCITJdFh1c?si=4oDVnbojGPSvJPvx",
     },
-  ];
+  ].map((item) => {
+    const videoId = extractVideoId(item.videoLink);
+    return {
+      ...item,
+      imageSrc: videoId ? getThumbnailUrl(videoId) : "",
+    };
+  });
 
   const textRef = useRef(null);
 
@@ -192,6 +207,7 @@ const SecondSection: React.FC = () => {
       });
     }
   }, []);
+
   const openModal = (videoLink: string) => {
     setSelectedVideo(videoLink);
     setModalOpen(true);
@@ -211,17 +227,18 @@ const SecondSection: React.FC = () => {
             : [];
 
           return (
-            <div key={item.id} className={classes.singleItem}      onClick={item.videoLink ? () => openModal(item.videoLink) : undefined}
-           >
-              <div className={classes.image}>
-                <Image
-                  src={`/assets/Images/corporateShowreel/${item.imageSrc}`}
-                  alt={item.heading}
-                  width={500}
-                  height={300}
-                  style={{ cursor: item.videoLink ? 'pointer' : 'default' }}
-                />
-              </div>
+            <div key={item.id} className={classes.singleItem} onClick={item.videoLink ? () => openModal(item.videoLink) : undefined}>
+              {item.imageSrc && (
+                <div className={classes.image}>
+            <Image
+                    src={item.imageSrc}
+                    alt={item.heading}
+                    width={500}
+                    height={300}
+                    style={{ cursor: item.videoLink ? 'pointer' : 'default' }}
+                  />
+                </div>
+              )}
               <h1 className={classes.heading}>{item.heading}</h1>
               <p className={classes.dec}>
                 {descriptionParts.map((part, index) => (
