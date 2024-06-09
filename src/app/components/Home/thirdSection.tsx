@@ -138,9 +138,11 @@ const ThirdSection = React.memo(() => {
           track record of empowering audiences worldwide, Liza's captivating
           keynote presentations leave an indelible mark on hearts and minds.
         </p>
+        <Link href="/corporate-showreel"> 
         <button className={classes.podcast} aria-label="Listen to podcast">
-          <Link href="/corporate-showreel"> corporate showreel</Link>
+          corporate showreel
         </button>
+        </Link>
       </header>
       <div className={`${classes.centerPic} container `}>
         <div className={classes.content}>
