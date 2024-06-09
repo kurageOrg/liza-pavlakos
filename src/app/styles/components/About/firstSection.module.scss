@@ -23,8 +23,10 @@
       border-radius: 16px;
 
       img {
-        height: min-content !important;
+        height: 100% !important;
         width: -webkit-fill-available !important;
+        object-fit: cover;
+
       }
     }
     .right {
@@ -134,7 +136,7 @@
       border-radius: 16px;
 
       img {
-        height: min-content !important;
+        height:100%!important;
         width: -webkit-fill-available !important;
       }
     }
@@ -275,7 +277,7 @@
       .left {
         flex: none;
         max-height: 70vh;
-        height: 48.25rem;
+        height: 63.25rem;
         border-radius: 1rem;
         width: 100%;
       }
@@ -311,7 +313,7 @@
         width: 100%;
 
         img {
-          height: min-content !important;
+          height:100%!important;
           width: -webkit-fill-available !important;
           margin: unset !important;
           left: 0 !important;
@@ -357,7 +359,7 @@
         width: 100%;
 
         img {
-          height: min-content !important;
+          height:100%!important;
           width: -webkit-fill-available !important;
         }
       }

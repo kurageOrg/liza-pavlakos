@@ -239,7 +239,7 @@ const SecondSection: React.FC = () => {
         <div ref={textRef} className={classes.track}>
           {Array.from({ length: 200 }).map((_, index) => (
             <span key={index} className={classes.content}>
-              • FOLLOW ME ON SOCIAL MEDIA{" "}
+              • FOLLOW LIZA ON SOCIAL MEDIA{" "}
             </span>
           ))}
         </div>

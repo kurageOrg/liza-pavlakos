@@ -149,13 +149,6 @@ const Nav: React.FC = () => {
                 <div className={classes.content}>
                   <Link
                     className={classes.text}
-                    href="/mind-hub"
-                    onClick={handleLinkClick}
-                  >
-                    MIND HUB
-                  </Link>
-                  <Link
-                    className={classes.text}
                     href="/foundation"
                     onClick={handleLinkClick}
                   >
