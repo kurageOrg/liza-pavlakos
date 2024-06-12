@@ -29,6 +29,7 @@ const ThirdSection = React.memo(() => {
     }
     return parseFloat(str.replace(/[^\d.]/g, "").replace(/k/i, "000"));
   };
+  
   const settings = {
     dots: false,
     arrows: false,

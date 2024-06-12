@@ -53,7 +53,7 @@
         border-radius: 16px;
         border: 1.5px solid #1e1e1e;
         overflow: hidden;
-        position: relative;
+        position: sticky;
         .transparentLayer {
           background-color: rgba(0, 0, 0, 0.5);
           position: absolute;
