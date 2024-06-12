@@ -95,7 +95,7 @@ const SixthSection: React.FC = () => {
       mob_description:
         "Liza Pavlakos is a powerful speaker on innovation, creativity and entrepreneurial mindset, sharing with the audience her captivating personal stories that most of us could never imagine.",
       videoLink:
-        "https://www.youtube.com/embed/U90Qn9WvaK8?si=p2y7alWk2YwuXFOd",
+        "https://www.youtube.com/embed/NslojjXWmeI?si=b0bJhnrOrkASKEX9",
     },
   ].map((item) => {
     const videoId = extractVideoId(item.videoLink);

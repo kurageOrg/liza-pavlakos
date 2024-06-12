@@ -139,6 +139,8 @@
       img {
         height:100%!important;
         width: -webkit-fill-available !important;
+        object-fit: cover;
+
       }
     }
     .right {
@@ -356,12 +358,13 @@
       .left {
         flex: none;
         max-height: 65vh;
-        height: 48.25rem;
+        height: 62.25rem;
         border-radius: 1rem;
         width: 100%;
 
         img {
           height:100%!important;
+          top: 0 !important;
           width: -webkit-fill-available !important;
         }
       }
@@ -482,12 +485,12 @@
       margin-top: 1.15rem;
       .left {
         flex: none;
-        height: 25.125rem;
+        height: 31.125rem;
         border-radius: 1rem;
         width: 100%;
 
         img {
-          height: min-content !important;
+          height: 100% !important;
           width: -webkit-fill-available !important;
         }
       }
