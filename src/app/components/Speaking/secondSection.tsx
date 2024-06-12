@@ -150,7 +150,13 @@ export default function SecondSection() {
         <div className={classes.singleItem}>
           <div className={classes.left}>
             <div className={classes.transparentLayer}></div>
-            <video
+            <Image
+            src="/assets/Images/about/cover_image_first.png"
+            alt="Cover Image"
+            layout="fill"
+            className={classes.coverImageMob}
+          />
+            {/* <video
               ref={videoRef}
               autoPlay
               width={100}
@@ -164,7 +170,7 @@ export default function SecondSection() {
                 src="assets/Images/speaking/A_WINNING_MINDSET_LIZA_PAVLAKOS_CORPORATE_SHOWREEL.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
             <button className={classes.playbtn} onClick={toggleModal}>
               <svg
                 width="91"
@@ -386,7 +392,13 @@ export default function SecondSection() {
           </div>
           <div className={classes.left}>
             <div className={classes.transparentLayer}></div>
-            <video
+            <Image
+            src="/assets/Images/about/cover_image_second.png"
+            alt="Cover Image"
+            layout="fill"
+            className={classes.coverImageMob}
+          />
+            {/* <video
               ref={videoRefSecond}
               autoPlay
               width={100}
@@ -400,7 +412,7 @@ export default function SecondSection() {
                 src="assets/Images/speaking/WHY_YOU SHOULD_BOOK LIZA_PAVLAKOS FOR_YOUR_NEXT_EVENT!.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
             <button className={classes.playbtn} onClick={toggleModalSecond}>
               <svg
                 width="91"
@@ -495,7 +507,7 @@ export default function SecondSection() {
         <div className={classes.singleItem}>
           <div className={classes.left}>
             <div className={classes.transparentLayer}></div>
-            <video
+            {/* <video
               ref={videoRefThird}
               autoPlay
               width={100}
@@ -509,7 +521,13 @@ export default function SecondSection() {
                 src="assets/Images/speaking/BEST_SPEAKER_MINI_SHOWREEL_LIZA_PAVLAKOS_BEYOND_SURVIVAL_RESILIENCE..mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
+                        <Image
+            src="/assets/Images/about/cover_image_third.png"
+            alt="Cover Image"
+            layout="fill"
+            className={classes.coverImageMob}
+          />
             <button className={classes.playbtn} onClick={toggleModalThird}>
               <svg
                 width="91"
