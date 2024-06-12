@@ -53,6 +53,14 @@ const SixthSection: React.FC = () => {
       });
     }
   }, []);
+  const extractVideoId = (videoLink: string): string | null => {
+    const match = videoLink.match(/(?:youtube\.com\/embed\/|youtu\.be\/)([^?]+)/);
+    return match ? match[1] : null;
+  };
+  
+  const getThumbnailUrl = (videoId: string): string => {
+    return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  };
   
   const data = [
     {
@@ -89,7 +97,13 @@ const SixthSection: React.FC = () => {
       videoLink:
         "https://www.youtube.com/embed/U90Qn9WvaK8?si=p2y7alWk2YwuXFOd",
     },
-  ];
+  ].map((item) => {
+    const videoId = extractVideoId(item.videoLink);
+    return {
+      ...item,
+      imageSrc: videoId ? getThumbnailUrl(videoId) : "",
+    };
+  });;
 
   const socialData = [
     {
@@ -289,15 +303,18 @@ const SixthSection: React.FC = () => {
                 item.videoLink ? () => openModal(item.videoLink) : undefined
               }
             >
-              <div className={classes.image}>
-                <Image
-                  src={`/assets/Images/section_6/${item.imageSrc}`}
-                  alt={item.heading}
-                  width={500}
-                  height={300}
-                  style={{ cursor: item.videoLink ? "pointer" : "default" }}
-                />
-              </div>
+
+                            {item.imageSrc && (
+                <div className={classes.image}>
+                  <Image
+                    src={item.imageSrc}
+                    alt={item.heading}
+                    width={500}
+                    height={300}
+                    style={{ cursor: item.videoLink ? "pointer" : "default" }}
+                  />
+                </div>
+              )}
               <h1 className={classes.heading}>{item.heading}</h1>
               <p className={classes.dec}>
                 {descriptionParts.map((part, index) => (
@@ -326,15 +343,17 @@ const SixthSection: React.FC = () => {
                   item.videoLink ? () => openModal(item.videoLink) : undefined
                 }
               >
+                              {item.imageSrc && (
                 <div className={classes.image}>
                   <Image
-                    src={`/assets/Images/section_6/${item.imageSrc}`}
+                    src={item.imageSrc}
                     alt={item.heading}
                     width={500}
                     height={300}
                     style={{ cursor: item.videoLink ? "pointer" : "default" }}
                   />
                 </div>
+              )}
                 <h1 className={classes.heading}>{item.heading}</h1>
                 <p className={classes.dec}>
                   {descriptionParts.map((part, index) => (

@@ -85,11 +85,15 @@
       .image {
         position: relative;
         overflow: hidden;
+        height: 19rem;
+
         img {
           border-radius: 7px;
           cursor: pointer;
           width: -webkit-fill-available !important;
           height: 100% !important;
+          object-fit: cover;
+
         }
       }
       .heading {
@@ -112,6 +116,58 @@
       }
       &:hover {
         background-color: #2a2a2a;
+      }
+    }
+    @media (max-width: 1600px) {
+      .singleItem {
+        .image {
+          height: 15.5rem;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      .singleItem {
+        .image {
+          height: 14rem;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      .singleItem {
+        .image {
+          height: 20rem;
+        }
+
+        .heading {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        .dec {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .singleItem {
+        padding: 15px;
+        margin: auto;
+        .image {
+          height:25rem;
+        }
+
+        .heading {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        .dec {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -316,6 +372,8 @@
         margin-bottom: 5px;
         padding: 20px;
         height: auto;
+ 
+
 
         .heading {
           font-size: 21px;
@@ -467,10 +525,19 @@
         margin-top: 2.69rem;
         margin-bottom: 5px;
         padding: 10px;
-        height: 350px;
+        height: auto;
         background-color: #1e1e1e;
         border-radius: 9px;
         padding-bottom: 1rem;
+        .image {
+          height:9rem;
+          img {
+            width: -webkit-fill-available !important;
+            height: 100% !important;
+            object-fit: cover;
+          }
+
+        }
 
         .heading {
           font-size: 1.1rem;
@@ -545,6 +612,7 @@
             }
           }
         }
+        
       }
     }
   }

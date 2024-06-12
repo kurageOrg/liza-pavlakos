@@ -79,9 +79,9 @@ const Footer = () => {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/speaking">Speaking</Link>
-            <Link href="/podcast">CORPORATE SHOWREEL</Link>
-            <Link href="/blog">THE BOOK</Link>
-            <Link href="/hire">Hire</Link>
+            <Link href="/corporate-showreel">CORPORATE SHOWREEL</Link>
+            <Link href="/book">THE BOOK</Link>
+            <Link href="/contact">Hire</Link>
             <Link href="/contact">Contact</Link>
           </div>
           <div className={classes.column}>

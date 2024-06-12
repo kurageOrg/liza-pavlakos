@@ -19,7 +19,7 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: -1;
+      z-index: 1;
       width: 100%;
       height: 100%;
     }
@@ -28,13 +28,29 @@
       width: 100%;
       scale: 1.05;
     }
+    .coverImage {
+      .coverImageMob {
+        display: none;
+      }
+      .playbtn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index:222;
+        outline: none;
+        border: none;
+        background-color: transparent;
+      }
+    }
     .playbtn {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       cursor: pointer;
-      z-index: -1;
+      z-index: 1;
       outline: none;
       border: none;
       background-color: transparent;
@@ -60,6 +76,8 @@
       }
       .transparentLayer {
         z-index: 8;
+        border-radius: 27px;
+
       }
     }
   }
@@ -178,7 +196,26 @@
       height: 100%;
       border: 3px solid #c9bca5;
       border-radius: 20px;
+      .coverImage {
+        .coverImageLaptop {
+          display: none;
+        }
+        .coverImageMob {
+          display: block;
 
+        }
+        .playbtn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          z-index: 1;
+          outline: none;
+          border: none;
+          background-color: transparent;
+        }
+      }
       .playbtn {
         scale: 0.8;
       }
@@ -216,7 +253,25 @@
       height: 100%;
       border: 1px solid #c9bca5;
       border-radius: 0.625rem;
+      .coverImage {
+        .coverImageLaptop {
+          display: none;
+        }
+        .coverImageMob {
+          display: block;
 
+        }        .playbtn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          z-index:1;
+          outline: none;
+          border: none;
+          background-color: transparent;
+        }
+      }
       .playbtn {
           scale: 0.7;
 
