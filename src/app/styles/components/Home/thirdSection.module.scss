@@ -98,12 +98,14 @@
           width: 323px;
           height: 380px;
           border-radius: 50px;
-          // overflow: hidden;
+          overflow: hidden;
           border: 1px solid rgba(203, 189, 112, 0.3);
           img {
             left: -141px !important;
-            width: revert !important;
+            width: 100% !important;
             height: 100% !important;
+            object-fit: cover;
+
           }
         }
         .Blacksmile {
@@ -114,9 +116,11 @@
           overflow: hidden;
           border: 1px solid rgba(203, 189, 112, 0.3);
           img {
-            left: -30px !important;
-            width: revert !important;
+            left: 0 !important;
+            width: 100% !important;
             height: 100% !important;
+            object-fit: cover;
+
           }
         }
       }
@@ -172,9 +176,11 @@
         margin-bottom: 30px;
 
         img {
-          left: -101px !important;
-          width: revert !important;
+          left: 0 !important;
+          width: 100% !important;
           height: 100% !important;
+          object-fit: cover;
+
         }
       }
     }
@@ -299,7 +305,7 @@
             width: 323px;
             height: 310px;
             img {
-              left: -90px !important;
+              left: -30px !important;
               top: -25px !important;
               transform: scale(1.2);
             }
@@ -338,7 +344,7 @@
           margin-bottom: 30px;
 
           img {
-            left: -230px !important;
+            left: 0 !important;
             height: 100% !important;
             transform: scale(1.5);
             top: -60px !important;
@@ -499,13 +505,15 @@
           left: -20px !important;
         }
         .second {
-          width: fit-content !important;
-          left: -80px !important;
+          width: 100% !important;
+          left: 0 !important;
+          object-fit: cover; 
+
 
         }
         .third {
-          width: fit-content !important;
-          left: -150px !important;
+          width: 100% !important;
+          left: 0 !important;
           top: -20px !important;
           scale: 1.25;
 
@@ -516,14 +524,16 @@
         }
         .fifth {
           scale: 1.4;
-          width: fit-content !important;
-          left: -70px !important;
+          width: 100% !important;
+          left: 0 !important;
+          object-fit: cover; 
 
           top: 45px !important;
         }
         .sixth {
-          width: fit-content !important;
-          left: -120px !important;
+          width: 100% !important;
+          left: 0 !important;
+          object-fit: cover; 
 
         }
       }

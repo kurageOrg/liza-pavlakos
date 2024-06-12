@@ -316,7 +316,6 @@ function ImageBlock({ src, alt, priority = false, className }: any) {
       alt={alt}
       fill
       priority={priority}
-      sizes="(max-width: 768px) 100vw, 50vw"
       className={className}
     />
   );
