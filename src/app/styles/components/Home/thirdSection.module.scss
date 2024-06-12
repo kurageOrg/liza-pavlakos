@@ -58,6 +58,7 @@
       text-transform: uppercase;
       margin-top: 45px;
       cursor: pointer;
+      color: #000;
     }
   }
   .centerPic {
@@ -97,7 +98,7 @@
           width: 323px;
           height: 380px;
           border-radius: 50px;
-          overflow: hidden;
+          // overflow: hidden;
           border: 1px solid rgba(203, 189, 112, 0.3);
           img {
             left: -141px !important;

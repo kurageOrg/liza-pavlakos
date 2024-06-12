@@ -10,10 +10,11 @@
     align-items: flex-start;
     height: 875px;
     .left {
-      position: relative;
+      position: sticky !important;
       flex: 1;
       width: 1055px;
       height: 885px;
+      display: flex !important;
       img {
         width: revert !important;
         height: 100% !important;
@@ -102,6 +103,7 @@
           text-transform: uppercase;
           margin-top: 45px;
           cursor: pointer;
+          color: #000;
         }
       }
       .cards {
@@ -405,6 +407,7 @@
           margin-bottom: 55px;
           .mob_hire {
             display: block;
+            color: #000;
           }
         }
       }
@@ -423,6 +426,9 @@
       .left {
         img {
           left: -185px !important;
+          position: sticky !important;
+          object-fit: cover;
+width: 40% !important;
         }
       }
       .right {
@@ -564,6 +570,7 @@
             width: 8.6875rem;
             height: 2.8125rem;
             font-size: 0.9375rem;
+            color: #000;
           }
         }
       }

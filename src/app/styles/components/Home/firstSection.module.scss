@@ -37,7 +37,9 @@
         display: none;
       }
       img {
-        width: auto !important;
+        width: 100% !important;
+        object-fit: cover;
+
       }
       .playbtn {
         position: absolute;
@@ -199,8 +201,9 @@
       width: 100%;
       position: relative;
       .coverImage {
-        .coverImageLaptop {
-          display: none;
+        img {
+          object-fit: cover;
+
         }
         .coverImageMob {
           display: block;
@@ -272,6 +275,10 @@
       height: 22.3125rem;
       margin-top: 0px;
       width: 100%;
+      .transparentLayer {
+        border-radius: 0.625rem;
+
+      }
       video {
         scale: 1;
         height: 100%;
@@ -284,7 +291,12 @@
         .coverImageMob {
           display: block;
 
-        }        .playbtn {
+        } 
+        img {
+          object-fit: cover;
+
+        }
+        .playbtn {
           position: absolute;
           top: 50%;
           left: 50%;

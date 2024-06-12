@@ -25,7 +25,7 @@
     border: 2px solid #cbbd70;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    position: relative;
+    position: sticky;
     .transparentLayer {
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
@@ -248,6 +248,7 @@
       height: 16rem;
       margin-top: 0;
       border-radius: 1rem;
+      position: sticky;
 
       video {
         scale: 1.7;

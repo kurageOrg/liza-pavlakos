@@ -56,9 +56,7 @@ const FirstSection = React.memo(() => {
               </Link>
               Liza has firmly established herself as one of the world’s
               <Link
-                passHref
-                target="_blank"
-                rel="noopener noreferrer"
+   
                 href="https://lizapavlakos.com/wp-content/uploads/2023/07/Liza-Pavlakos-40-Top-Women-Keynote-Speakers-For-2020.pdf"
               >
               <span className={classes.highlight}> top 10 female speakers. </span>

@@ -253,7 +253,6 @@ const FifthSection = React.memo(() => {
           <Image
             src="/assets/Images/Section_4/lizaImg.jpg"
             alt="Liza Pavlakos in the right corner"
-            loading="lazy"
             fill
           />
         </div>
