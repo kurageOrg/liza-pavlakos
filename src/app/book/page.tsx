@@ -16,12 +16,12 @@ export default function Book() {
         <meta property="og:title" content="Conviction by Liza Pavlakos - An Inspiring Journey" />
         <meta property="og:description" content="Discover 'Conviction' by Liza Pavlakos, a powerful story of overcoming trauma and finding purpose. Pre-order your copy now." />
         <meta property="og:image" content="/path/to/liza_book_cover.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/book" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/book" />
         <meta name="twitter:title" content="Conviction by Liza Pavlakos - An Inspiring Journey" />
         <meta name="twitter:description" content="Discover 'Conviction' by Liza Pavlakos, a powerful story of overcoming trauma and finding purpose. Pre-order your copy now." />
         <meta name="twitter:image" content="/path/to/liza_book_cover.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/book" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/book" />
       </Head>
       <div className="headerWrapper">
         <FirstSection />

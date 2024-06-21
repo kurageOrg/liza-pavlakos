@@ -16,12 +16,12 @@ export default function Contact() {
         <meta property="og:title" content="Contact Liza Pavlakos - Speaking & Media Enquiries" />
         <meta property="og:description" content="Get in touch with Liza Pavlakos for speaking engagements, media enquiries, or any other questions. Fill out the contact form or reach out directly via email or phone." />
         <meta property="og:image" content="/path/to/contact_image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/contact" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/contact" />
         <meta name="twitter:title" content="Contact Liza Pavlakos - Speaking & Media Enquiries" />
         <meta name="twitter:description" content="Get in touch with Liza Pavlakos for speaking engagements, media enquiries, or any other questions. Fill out the contact form or reach out directly via email or phone." />
         <meta name="twitter:image" content="/path/to/contact_image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/contact" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/contact" />
       </Head>
       <div className="headerWrapper">
         <FirstSection />

@@ -19,12 +19,12 @@ export default function Foundation() {
         <meta property="og:title" content="The Liza Pavlakos Foundation - For Better Lives" />
         <meta property="og:description" content="Learn about the Liza Pavlakos Foundation's mission to uplift and empower underprivileged communities through mental health education, counselling, and providing necessities." />
         <meta property="og:image" content="/path/to/foundation_image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/foundation" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/foundation" />
         <meta name="twitter:title" content="The Liza Pavlakos Foundation - For Better Lives" />
         <meta name="twitter:description" content="Learn about the Liza Pavlakos Foundation's mission to uplift and empower underprivileged communities through mental health education, counselling, and providing necessities." />
         <meta name="twitter:image" content="/path/to/foundation_image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/foundation" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/foundation" />
       </Head>
       <div className="headerWrapper">
         <FirstSection />

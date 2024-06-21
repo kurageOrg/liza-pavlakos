@@ -16,12 +16,12 @@ export default function About() {
         <meta property="og:title" content="About Liza Pavlakos - Keynote Speaker & Entrepreneur" />
         <meta property="og:description" content="Liza Pavlakos is a globally recognized keynote speaker, entrepreneur, and mental health trailblazer. Learn about her journey, achievements, and how she inspires others." />
         <meta property="og:image" content="/path/to/liza_firstSectionImg1.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/about" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/about" />
         <meta name="twitter:title" content="About Liza Pavlakos - Keynote Speaker & Entrepreneur" />
         <meta name="twitter:description" content="Liza Pavlakos is a globally recognized keynote speaker, entrepreneur, and mental health trailblazer. Learn about her journey, achievements, and how she inspires others." />
         <meta name="twitter:image" content="/path/to/liza_firstSectionImg1.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/about" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/about" />
       </Head>
       <div className="headerWrapper">
         <FirstSection />

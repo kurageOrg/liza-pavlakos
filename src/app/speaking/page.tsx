@@ -19,12 +19,12 @@ export default function Speaking() {
         <meta property="og:title" content="Liza Pavlakos Speaking Engagements - Empowering Keynote Programs" />
         <meta property="og:description" content="Experience Liza Pavlakos' transformative keynote programs on leadership, resilience, and overcoming adversity. Customizable topics to align with your corporate event preferences." />
         <meta property="og:image" content="/path/to/speaking_image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/speaking" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/speaking" />
         <meta name="twitter:title" content="Liza Pavlakos Speaking Engagements - Empowering Keynote Programs" />
         <meta name="twitter:description" content="Experience Liza Pavlakos' transformative keynote programs on leadership, resilience, and overcoming adversity. Customizable topics to align with your corporate event preferences." />
         <meta name="twitter:image" content="/path/to/speaking_image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/speaking" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/speaking" />
       </Head>
       <div className="headerWrapper">
         <FirstSection />

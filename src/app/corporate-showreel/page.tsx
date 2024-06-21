@@ -16,12 +16,12 @@ export default function CorporateShowreel() {
         <meta property="og:title" content="Liza Pavlakos Corporate Showreel - Motivational and Leadership Speaker" />
         <meta property="og:description" content="Watch Liza Pavlakos' corporate showreel and experience her captivating keynote presentations. Discover why Liza is a highly sought-after speaker on leadership and mental resilience." />
         <meta property="og:image" content="/path/to/showreel_image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/corporate-showreel" />
+        <meta property="og:url" content="https://www.lizapavlakos.com/corporate-showreel" />
         <meta name="twitter:title" content="Liza Pavlakos Corporate Showreel - Motivational and Leadership Speaker" />
         <meta name="twitter:description" content="Watch Liza Pavlakos' corporate showreel and experience her captivating keynote presentations. Discover why Liza is a highly sought-after speaker on leadership and mental resilience." />
         <meta name="twitter:image" content="/path/to/showreel_image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.yourwebsite.com/corporate-showreel" />
+        <link rel="canonical" href="https://www.lizapavlakos.com/corporate-showreel" />
       </Head>
       
       <div className="headerWrapper">
