@@ -59,7 +59,7 @@
 @media only screen and (max-width: 1600px) {
   .section {
     min-height: 900px;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 40px;
 
     .left {
@@ -84,6 +84,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     flex-direction: column-reverse;
+    padding-top: 0;
     .right {
       width: 100%;
       flex: none;
