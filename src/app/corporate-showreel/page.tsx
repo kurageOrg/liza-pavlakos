@@ -23,6 +23,7 @@ export default function CorporateShowreel() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://www.yourwebsite.com/corporate-showreel" />
       </Head>
+      
       <div className="headerWrapper">
         <FirstSection />
         <SecondSection />
