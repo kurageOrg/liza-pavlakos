@@ -2,6 +2,7 @@ import "@/app/styles/main.scss";
 import { GLt, GMd, GRg, HRg, SRg } from "./components/Fonts";
 import Header from "./components/Layout/header";
 import Footer from "./components/Layout/footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: any = {
   title: "Liza Pavlakos",
@@ -63,6 +64,7 @@ export default function RootLayout({
       <body className={`${HRg.variable} ${GRg.variable} ${GMd.variable} ${GLt.variable} ${SRg.variable}`}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
