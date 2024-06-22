@@ -7,7 +7,7 @@ export const metadata: any = {
   title: "Liza Pavlakos",
   description: "Liza Pavlakos is an internationally renowned keynote speaker on leadership and mental resilience. Learn more about her journey and how she can inspire your team.",
   image: "https://lh3.googleusercontent.com/pw/AP1GczNC3aw1ry-l9DNfKu4zgZVPXeKaw3Q2VriarjBv97tt7unUCWyLgAhAUXhJc9hr8CXR-gGwhVHUV_Gs146qjsWu7itRqdFxQcW7lyGdmmx_MC1niM01Ei8genCqSrcwcGeb6TGZcY1ITpCre7p79UWS=w3040-h2022-s-no-gm",
-  url: "https://www.lizapavlakos.com/",
+  url: "https://www.lizapavlakos.com" // Replace with your actual website URL
 };
 
 export default function RootLayout({
@@ -15,6 +15,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Liza Pavlakos",
+    "description": metadata.description,
+    "image": metadata.image,
+    "url": metadata.url,
+    "sameAs": [
+      "https://www.linkedin.com/in/liza-pavlakos",
+      "https://twitter.com/LizaPavlakos"
+    ],
+    "jobTitle": "Keynote Speaker",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Liza Pavlakos"
+    }
+  };
+
   return (
     <html lang="en">
       <head>
@@ -37,26 +55,10 @@ export default function RootLayout({
         <meta name="twitter:image" content={metadata.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={metadata.url} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Liza Pavlakos",
-            "description": metadata.description,
-            "image": metadata.image,
-            "url": metadata.url,
-            "sameAs": [
-              "https://www.linkedin.com/in/liza-pavlakos",
-              "https://twitter.com/LizaPavlakos",
-              // Add more social profiles if available
-            ],
-            "jobTitle": "Keynote Speaker",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "Liza Pavlakos"
-            }
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={`${HRg.variable} ${GRg.variable} ${GMd.variable} ${GLt.variable} ${SRg.variable}`}>
         <Header />

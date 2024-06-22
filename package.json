@@ -24,6 +24,7 @@
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.75.0",
     "scss": "^0.2.4",
+    "sitemap": "^8.0.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
