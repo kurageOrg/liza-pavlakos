@@ -31,6 +31,53 @@ export default function RootLayout({
     "worksFor": {
       "@type": "Organization",
       "name": "Liza Pavlakos"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lizapavlakos.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Speaking",
+          "item": "https://www.lizapavlakos.com/speaking"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "About",
+          "item": "https://www.lizapavlakos.com/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Corporate Showreel",
+          "item": "https://www.lizapavlakos.com/corporate-showreel"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Book",
+          "item": "https://www.lizapavlakos.com/book"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Foundation",
+          "item": "https://www.lizapavlakos.com/foundation"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Contact",
+          "item": "https://www.lizapavlakos.com/contact"
+        }
+      ]
     }
   };
 
